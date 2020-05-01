@@ -1,13 +1,17 @@
+#root {
+  max-height: 95vh;
+}
 .App {
   font-family: sans-serif;
-  max-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 8px;
+  overflow-y: auto;
 }
 .word-cloud {
-  height: 400px;
+  flex-basis: 400px;
+  flex-shrink: 0;
   width: 100%;
   border: 2px dashed gray;
   border-radius: 8px;
@@ -40,6 +44,13 @@ button {
   border-radius: 8px;
   border: 0;
   cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 button:hover {
@@ -53,6 +64,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 400px;
 }
 table {
   border-collapse: collapse;

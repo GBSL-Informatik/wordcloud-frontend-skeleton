@@ -23,6 +23,8 @@ export default class App extends React.Component {
         break;
       case 'socket':
         break;
+      default:
+        return;
     }
   }
 
@@ -35,6 +37,8 @@ export default class App extends React.Component {
         break;
       case 'socket':
         break;
+      default:
+        return;
     }
   };
 
